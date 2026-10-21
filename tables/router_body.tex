@@ -1,0 +1,13 @@
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+ensemble & \shortstack{image\\AUROC} & decision accuracy & regret vs.\ constant choice \\
+\midrule
+always \draem{} (constant choice) & 0.808 & 35/45 = 77.8\% & $0$ \\
+always PGDN & 0.695 & 10/45 = 22.2\% & $+0.112$ \\
+routed: synthetic argmax & 0.781 & 29/45 & $+0.027$ \\
+routed: synthetic margin & 0.806 & 33/45 & $+0.002$ \\
+routed: prior validity (historical manual analysis, 15 category decisions) & 0.800 & 9/15 & $+0.008$ \\
+oracle (upper bound) & 0.847 & 45/45 & $-0.039$ \\
+\bottomrule
+\end{tabular}

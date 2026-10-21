@@ -1,0 +1,23 @@
+{
+  "protocol": "30 paired backgrounds, fixed per-image evaluation seed; coupling-only arm trained at each lambda_C (8-epoch gray recipe, seed 42, cuda)",
+  "C-off (base)": {
+    "perlin": 0.9605555555555556,
+    "smooth": 0.9866666666666667
+  },
+  "0.1": {
+    "perlin": 0.9644444444444444,
+    "smooth": 0.9811111111111112
+  },
+  "0.25": {
+    "perlin": 0.9377777777777778,
+    "smooth": 0.76
+  },
+  "0.5": {
+    "perlin": 0.7033333333333334,
+    "smooth": 0.5322222222222223
+  },
+  "1.0": {
+    "perlin": 0.5733333333333335,
+    "smooth": 0.47333333333333333
+  }
+}

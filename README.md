@@ -71,6 +71,32 @@ Training uses one fixed synthetic-defect realization per training image
 (deterministic augmentation, no clean-image branch); see the paper's
 method section for the exact recipe and deviations from DRAEM.
 
+## Analysis records and reproducible tables
+
+Manuscript sources and the released analysis records are at
+<https://github.com/naseerkhan861/physics_deeplearning_anomaly>.
+The repository's `artifact/` directory provides checkpoint/configuration
+provenance, factorial and intervention endpoints, gradient probes,
+compatibility predictions, real-defect per-image scores and bootstrap
+code, and canonical KolektorSDD2 localization statistics.
+Defect-analysis records are versioned: `defect_analysis_v1`
+holds the localization/coverage records of Figure 3 and the
+*superseded* v1 opposition records (retained only for the audit
+trail), `v2_calibrated` the split-calibrated coverage check,
+and `v3` the corrected opposition records behind Figure 6;
+builders are in `plots/`. `make_tables.py --artifact`
+regenerates eleven decisive tables and their body variants. The
+repository's implementation (loaders, networks, stabilized batch coupling loss,
+focal/SSIM settings, prior calibration, fixed-smoothing scorer), the
+experiment drivers including the frozen stronger-recipe protocol, the
+defect-analysis exporters, the pinned environment, and the decisive
+seed-42 factorial and KolektorSDD2 checkpoints with hashes in the run
+manifest are at the repository root and in `checkpoints/`. Regeneration
+from released records is distinct from rerunning training and
+inference. The additional `artifact/submission_checks.py`
+regenerates the paired RGB sensitivity and repeatability summaries,
+with source-file digests.
+
 ## Citation
 
 If you use this code, please cite the paper.

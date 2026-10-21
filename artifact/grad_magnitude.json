@@ -1,0 +1,63 @@
+{
+  "definition": "mass ratio = sum|dC_e/dlogit| / sum|dL_seg/dlogit| over defect-mask pixels, per image, mean over 30 images; lambda=0.5 included; gradients at the logits (not parameters)",
+  "screw/cpl": {
+    "perlin": {
+      "mass_ratio": 4.199,
+      "oppose_w": 0.824
+    },
+    "smooth": {
+      "mass_ratio": 1.729,
+      "oppose_w": 0.743
+    }
+  },
+  "screw/full": {
+    "perlin": {
+      "mass_ratio": 3.543,
+      "oppose_w": 0.918
+    },
+    "smooth": {
+      "mass_ratio": 1.731,
+      "oppose_w": 0.781
+    }
+  },
+  "capsule/cpl": {
+    "perlin": {
+      "mass_ratio": 1.107,
+      "oppose_w": 0.655
+    },
+    "smooth": {
+      "mass_ratio": 0.967,
+      "oppose_w": 0.56
+    }
+  },
+  "capsule/full": {
+    "perlin": {
+      "mass_ratio": 0.863,
+      "oppose_w": 0.7
+    },
+    "smooth": {
+      "mass_ratio": 0.729,
+      "oppose_w": 0.645
+    }
+  },
+  "bottle/cpl": {
+    "perlin": {
+      "mass_ratio": 1.198,
+      "oppose_w": 0.806
+    },
+    "smooth": {
+      "mass_ratio": 1.233,
+      "oppose_w": 0.71
+    }
+  },
+  "bottle/full": {
+    "perlin": {
+      "mass_ratio": 1.403,
+      "oppose_w": 0.883
+    },
+    "smooth": {
+      "mass_ratio": 1.238,
+      "oppose_w": 0.769
+    }
+  }
+}

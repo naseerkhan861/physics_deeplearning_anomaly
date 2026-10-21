@@ -1,0 +1,22 @@
+% auto-generated: tab:interaction
+\begin{table*}[!t]
+\caption{Channel$\times$coupling interaction with the reconstruction loss disabled (difference-in-differences of macro image AUROC over the five factorial categories, percentage points; negative = antagonism). Replicated across seeds; SD is the population convention across seeds. Real-only sensitivity rows recompute the contrast on real defects (macro3: screw/capsule/bottle from the released per-image scores; macro4 adds cashew from the standard factorial evaluations recorded in the interaction record): negative at every seed, so the additive antagonism is not an artifact of the synthetic unit's limited metric headroom (on CONSTRUCT the input arm saturates at $1.000$ and coupling reaches $0.996$).} \label{tab:interaction}
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+run & base & input & coupling & input$+$coupling & interaction (pp) \\
+\midrule
+seed 42 & 0.650 & 0.773 & 0.772 & 0.727 & -16.8 \\
+seed 0 & 0.716 & 0.807 & 0.769 & 0.784 & -7.6 \\
+seed 1 & 0.569 & 0.822 & 0.712 & 0.785 & -18.0 \\
+\textbf{mean$\pm$SD} &  &  &  &  & \textbf{-14.1$\pm$4.6} \\
+real macro3 s42 &  &  &  &  & -11.9 \\
+real macro4 s42 (w/cashew) &  &  &  &  & -12.0 \\
+real macro3 s0 &  &  &  &  & -14.6 \\
+real macro4 s0 (w/cashew) &  &  &  &  & -7.8 \\
+real macro3 s1 &  &  &  &  & -21.8 \\
+real macro4 s1 (w/cashew) &  &  &  &  & -17.4 \\
+\bottomrule
+\end{tabular}
+\end{table*}

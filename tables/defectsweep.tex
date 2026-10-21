@@ -1,0 +1,22 @@
+% auto-generated: tab:defectsweep
+\begin{table*}[!t]
+\caption{Defect-family dose-response on screw: the smooth-defect generator's contrast, defect frequency, and binary mask smoothing varied one factor at a time over the same 30 paired backgrounds (frozen seed-42 factorial checkpoints). The deriv.\ ratio is the gradient energy inside the defect mask relative to the clean background. The coupling-only arm improves substantially only at the highest contrast ($0.484\to0.849$); the input$+$coupling and full arms remain at chance across the whole family; the uncoupled arms are not uniformly robust (reconstruction-only loses $23.6$ pp at the lowest contrast; input-only loses $19.0$ pp from mid to low (coarser) defect frequency).} \label{tab:defectsweep}
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcccccccccc@{}}
+\toprule
+factor & level & deriv.\ ratio & base & in & rec & cpl & inrec & incpl & recpl & full \\
+\midrule
+contrast & 0.10 & 1.04 & 0.852 & 0.863 & 0.764 & 0.484 & 0.878 & 0.462 & 0.461 & 0.489 \\
+ & 0.18 & 1.15 & 0.958 & 0.934 & 0.998 & 0.480 & 0.952 & 0.461 & 0.462 & 0.489 \\
+ & 0.25 & 1.28 & 0.987 & 0.941 & 1.000 & 0.570 & 0.966 & 0.468 & 0.442 & 0.494 \\
+ & 0.40 & 1.61 & 1.000 & 0.962 & 1.000 & 0.849 & 0.980 & 0.479 & 0.419 & 0.503 \\
+frequency & high & 1.54 & 1.000 & 0.957 & 1.000 & 0.602 & 0.970 & 0.534 & 0.463 & 0.506 \\
+ & mid & 1.28 & 0.987 & 0.941 & 1.000 & 0.570 & 0.966 & 0.468 & 0.442 & 0.494 \\
+ & low & 1.29 & 0.963 & 0.751 & 0.999 & 0.489 & 0.889 & 0.451 & 0.386 & 0.469 \\
+softness & hard & 1.30 & 0.988 & 0.939 & 1.000 & 0.566 & 0.963 & 0.466 & 0.448 & 0.488 \\
+ & mid & 1.28 & 0.987 & 0.941 & 1.000 & 0.570 & 0.966 & 0.468 & 0.442 & 0.494 \\
+ & soft & 1.26 & 0.984 & 0.937 & 1.000 & 0.546 & 0.958 & 0.462 & 0.426 & 0.494 \\
+\bottomrule
+\end{tabular}
+\end{table*}

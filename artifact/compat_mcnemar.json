@@ -1,0 +1,285 @@
+{
+  "protocol": "threshold/median fit on DEV categories only; exact McNemar (two-sided binomial) on discordant rule-vs-constant correctness pairs",
+  "splits": {
+    "edge_devthr_fwd": {
+      "threshold_on_dev_only": true,
+      "rule_correct": "3/8",
+      "constant_correct": "6/8",
+      "discordant_rule_only": 2,
+      "discordant_constant_only": 5,
+      "mcnemar_exact_p": 0.4531,
+      "per_category": [
+        {
+          "cat": "metal_nut",
+          "rule": true,
+          "constant": false,
+          "truth": false,
+          "rule_correct": false,
+          "constant_correct": true
+        },
+        {
+          "cat": "pill",
+          "rule": true,
+          "constant": false,
+          "truth": false,
+          "rule_correct": false,
+          "constant_correct": true
+        },
+        {
+          "cat": "screw",
+          "rule": true,
+          "constant": false,
+          "truth": true,
+          "rule_correct": true,
+          "constant_correct": false
+        },
+        {
+          "cat": "tile",
+          "rule": true,
+          "constant": false,
+          "truth": false,
+          "rule_correct": false,
+          "constant_correct": true
+        },
+        {
+          "cat": "toothbrush",
+          "rule": true,
+          "constant": false,
+          "truth": false,
+          "rule_correct": false,
+          "constant_correct": true
+        },
+        {
+          "cat": "transistor",
+          "rule": false,
+          "constant": false,
+          "truth": false,
+          "rule_correct": true,
+          "constant_correct": true
+        },
+        {
+          "cat": "wood",
+          "rule": true,
+          "constant": false,
+          "truth": true,
+          "rule_correct": true,
+          "constant_correct": false
+        },
+        {
+          "cat": "zipper",
+          "rule": true,
+          "constant": false,
+          "truth": false,
+          "rule_correct": false,
+          "constant_correct": true
+        }
+      ]
+    },
+    "edge_devthr_rev": {
+      "threshold_on_dev_only": true,
+      "rule_correct": "5/7",
+      "constant_correct": "4/7",
+      "discordant_rule_only": 2,
+      "discordant_constant_only": 1,
+      "mcnemar_exact_p": 1.0,
+      "per_category": [
+        {
+          "cat": "bottle",
+          "rule": false,
+          "constant": false,
+          "truth": false,
+          "rule_correct": true,
+          "constant_correct": true
+        },
+        {
+          "cat": "cable",
+          "rule": false,
+          "constant": false,
+          "truth": false,
+          "rule_correct": true,
+          "constant_correct": true
+        },
+        {
+          "cat": "capsule",
+          "rule": true,
+          "constant": false,
+          "truth": true,
+          "rule_correct": true,
+          "constant_correct": false
+        },
+        {
+          "cat": "carpet",
+          "rule": false,
+          "constant": false,
+          "truth": false,
+          "rule_correct": true,
+          "constant_correct": true
+        },
+        {
+          "cat": "grid",
+          "rule": false,
+          "constant": false,
+          "truth": true,
+          "rule_correct": false,
+          "constant_correct": false
+        },
+        {
+          "cat": "hazelnut",
+          "rule": true,
+          "constant": false,
+          "truth": true,
+          "rule_correct": true,
+          "constant_correct": false
+        },
+        {
+          "cat": "leather",
+          "rule": true,
+          "constant": false,
+          "truth": false,
+          "rule_correct": false,
+          "constant_correct": true
+        }
+      ]
+    },
+    "statcv_devthr_fwd": {
+      "threshold_on_dev_only": true,
+      "rule_correct": "6/8",
+      "constant_correct": "6/8",
+      "discordant_rule_only": 1,
+      "discordant_constant_only": 1,
+      "mcnemar_exact_p": 1.0,
+      "per_category": [
+        {
+          "cat": "metal_nut",
+          "rule": false,
+          "constant": false,
+          "truth": false,
+          "rule_correct": true,
+          "constant_correct": true
+        },
+        {
+          "cat": "pill",
+          "rule": false,
+          "constant": false,
+          "truth": false,
+          "rule_correct": true,
+          "constant_correct": true
+        },
+        {
+          "cat": "screw",
+          "rule": false,
+          "constant": false,
+          "truth": true,
+          "rule_correct": false,
+          "constant_correct": false
+        },
+        {
+          "cat": "tile",
+          "rule": true,
+          "constant": false,
+          "truth": false,
+          "rule_correct": false,
+          "constant_correct": true
+        },
+        {
+          "cat": "toothbrush",
+          "rule": false,
+          "constant": false,
+          "truth": false,
+          "rule_correct": true,
+          "constant_correct": true
+        },
+        {
+          "cat": "transistor",
+          "rule": false,
+          "constant": false,
+          "truth": false,
+          "rule_correct": true,
+          "constant_correct": true
+        },
+        {
+          "cat": "wood",
+          "rule": true,
+          "constant": false,
+          "truth": true,
+          "rule_correct": true,
+          "constant_correct": false
+        },
+        {
+          "cat": "zipper",
+          "rule": false,
+          "constant": false,
+          "truth": false,
+          "rule_correct": true,
+          "constant_correct": true
+        }
+      ]
+    },
+    "statcv_devthr_rev": {
+      "threshold_on_dev_only": true,
+      "rule_correct": "2/7",
+      "constant_correct": "4/7",
+      "discordant_rule_only": 1,
+      "discordant_constant_only": 3,
+      "mcnemar_exact_p": 0.625,
+      "per_category": [
+        {
+          "cat": "bottle",
+          "rule": false,
+          "constant": false,
+          "truth": false,
+          "rule_correct": true,
+          "constant_correct": true
+        },
+        {
+          "cat": "cable",
+          "rule": true,
+          "constant": false,
+          "truth": false,
+          "rule_correct": false,
+          "constant_correct": true
+        },
+        {
+          "cat": "capsule",
+          "rule": false,
+          "constant": false,
+          "truth": true,
+          "rule_correct": false,
+          "constant_correct": false
+        },
+        {
+          "cat": "carpet",
+          "rule": true,
+          "constant": false,
+          "truth": false,
+          "rule_correct": false,
+          "constant_correct": true
+        },
+        {
+          "cat": "grid",
+          "rule": true,
+          "constant": false,
+          "truth": true,
+          "rule_correct": true,
+          "constant_correct": false
+        },
+        {
+          "cat": "hazelnut",
+          "rule": false,
+          "constant": false,
+          "truth": true,
+          "rule_correct": false,
+          "constant_correct": false
+        },
+        {
+          "cat": "leather",
+          "rule": true,
+          "constant": false,
+          "truth": false,
+          "rule_correct": false,
+          "constant_correct": true
+        }
+      ]
+    }
+  }
+}

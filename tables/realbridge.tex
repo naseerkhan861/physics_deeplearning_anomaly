@@ -1,0 +1,24 @@
+% auto-generated: tab:realbridge
+\begin{table}[!t]
+\caption{Real MVTec defects split at the median of the prior's own mean response $z$ inside the ground-truth mask (independent of detector outcomes); image AUROC per group with all defect-free test images as negatives (seed-42 factorial arms). The synthetic coupling failure does not predict real harm on screw, where the coupling-only arm is best on both groups; bottle shows a real coupling cost on both groups.} \label{tab:realbridge}
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+category & arm & $n$ & weak-prior img & strong-prior img \\
+\midrule
+screw & base & 119 & 0.351 & 0.397 \\
+ & in &  & 0.420 & 0.454 \\
+ & cpl &  & 0.819 & 0.920 \\
+ & incpl &  & 0.570 & 0.696 \\
+capsule & base & 109 & 0.490 & 0.501 \\
+ & in &  & 0.645 & 0.556 \\
+ & cpl &  & 0.408 & 0.425 \\
+ & incpl &  & 0.509 & 0.508 \\
+bottle & base & 63 & 0.829 & 0.864 \\
+ & in &  & 0.898 & 0.883 \\
+ & cpl &  & 0.587 & 0.728 \\
+ & incpl &  & 0.544 & 0.767 \\
+\bottomrule
+\end{tabular}
+\end{table}

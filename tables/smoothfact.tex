@@ -1,0 +1,36 @@
+% auto-generated: tab:smoothfact
+\begin{table*}[!t]
+\caption{Smooth-defect test across all eight factorial configurations (frozen checkpoints, seed-42 training, paired generators over up to 30 held-out normal images (30/23/20 for screw/capsule/bottle), fixed seed): the drop appears with the coupling loss (screw $-26.4$ coupling-only) and is absent from baseline, input-only, and reconstruction-only arms -- component-level isolation of a category-dependent failure family.} \label{tab:smoothfact}
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+category & configuration & perlin & smooth & $\Delta$ (pp) \\
+\midrule
+screw & base & 0.961 & 0.987 & +2.6 \\
+ & in & 0.938 & 0.941 & +0.3 \\
+ & rec & 0.999 & 1.000 & +0.1 \\
+ & cpl & 0.834 & 0.570 & -26.4 \\
+ & inrec & 0.939 & 0.966 & +2.7 \\
+ & incpl & 0.737 & 0.468 & -26.9 \\
+ & recpl & 0.758 & 0.442 & -31.6 \\
+ & full & 0.687 & 0.494 & -19.2 \\
+capsule & base & 0.998 & 1.000 & +0.2 \\
+ & in & 0.915 & 0.934 & +1.9 \\
+ & rec & 0.983 & 1.000 & +1.7 \\
+ & cpl & 0.996 & 1.000 & +0.4 \\
+ & inrec & 0.940 & 0.955 & +1.5 \\
+ & incpl & 0.985 & 0.686 & -29.9 \\
+ & recpl & 0.571 & 0.478 & -9.3 \\
+ & full & 0.996 & 0.837 & -15.9 \\
+bottle & base & 1.000 & 1.000 & +0.0 \\
+ & in & 0.983 & 1.000 & +1.7 \\
+ & rec & 0.990 & 1.000 & +1.0 \\
+ & cpl & 0.972 & 1.000 & +2.8 \\
+ & inrec & 0.997 & 1.000 & +0.3 \\
+ & incpl & 0.923 & 0.555 & -36.8 \\
+ & recpl & 0.930 & 0.995 & +6.5 \\
+ & full & 0.975 & 0.965 & -1.0 \\
+\bottomrule
+\end{tabular}
+\end{table*}

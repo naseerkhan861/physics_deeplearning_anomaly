@@ -1,0 +1,19 @@
+% auto-generated: tab:gradparam
+\begin{table}[!t]
+\caption{Parameter-level gradient conflict on trained checkpoints: norm ratio $\|g_C^{\lambda}\|/\|g_{\mathrm{seg}}\|$ with $g_C^{\lambda}=\nabla_{\theta}(\lambda_C C)$ the already loss-weighted coupling gradient, and cosine alignment over the shared parameters (mean over two batches of eight images). On screw the coupling gradient is strongly anti-aligned with the segmentation gradient (cosine $-0.6$ to $-0.97$) and can dominate it in norm (ratio up to $10.8$), while the non-failing coupling-only arms of capsule and bottle remain aligned on Perlin defects.} \label{tab:gradparam}
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+category & config & ratio (perlin) & cos (perlin) & ratio (smooth) & cos (smooth) \\
+\midrule
+screw & cpl & 1.6 & -0.97 & 0.7 & -0.92 \\
+screw & incpl & 10.8 & -0.60 & 2.5 & -0.94 \\
+screw & full & 4.2 & -0.66 & 1.6 & -0.59 \\
+capsule & cpl & 1.5 & +0.99 & 4.1 & +0.55 \\
+capsule & incpl & 1.6 & +0.56 & 2.1 & -0.04 \\
+bottle & cpl & 2.2 & +0.62 & 4.5 & -0.08 \\
+bottle & incpl & 1.8 & -0.02 & 1.8 & -0.94 \\
+\bottomrule
+\end{tabular}
+\end{table}

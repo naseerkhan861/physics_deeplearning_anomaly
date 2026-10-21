@@ -1,0 +1,15 @@
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+configuration & macro img AUROC & SD & macro pix AUROC & $n$ \\
+\midrule
+baseline (no channel, no losses) & 0.650 & 0.200 & 0.812 & 5 \\
+input $z$ only & 0.773 & 0.217 & 0.862 & 5 \\
+recon.~loss only & 0.620 & 0.177 & 0.814 & 5 \\
+coupling loss only & 0.772 & 0.210 & 0.827 & 5 \\
+input + recon.~loss & 0.729 & 0.210 & 0.884 & 5 \\
+input + coupling & 0.727 & 0.172 & 0.798 & 5 \\
+both losses (no input) & 0.796 & 0.173 & 0.829 & 5 \\
+full PGDN & 0.781 & 0.167 & 0.823 & 5 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,18 @@
+% auto-generated: tab:gradprobe
+\begin{table}[!t]
+\caption{Coupling-gradient conflict probe on trained checkpoints: fraction of the segmentation-gradient mass on defect-mask pixels where the coupling term pushes the opposite direction ($|g_{\mathrm{seg}}|$-weighted), and the mean sign of the coupling gradient on mask pixels (positive $=$ suppression, per $\partial C/\partial p_j=(\bar z_p - z_j)/P$).} \label{tab:gradprobe}
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+category & config & \shortstack{oppose\\(perlin)} & \shortstack{oppose\\(smooth)} & \shortstack{coupling sign\\(perlin)} & \shortstack{coupling sign\\(smooth)} \\
+\midrule
+screw & cpl & 0.76 & 0.90 & +0.15 & +0.62 \\
+screw & full & 0.87 & 0.92 & +0.23 & +0.67 \\
+capsule & cpl & 0.55 & 0.80 & -0.29 & +0.39 \\
+capsule & full & 0.76 & 0.90 & -0.20 & +0.51 \\
+bottle & cpl & 0.60 & 0.73 & -0.01 & +0.36 \\
+bottle & full & 0.80 & 0.86 & +0.13 & +0.49 \\
+\bottomrule
+\end{tabular}
+\end{table}

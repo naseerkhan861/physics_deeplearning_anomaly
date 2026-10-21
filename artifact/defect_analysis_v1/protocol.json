@@ -1,0 +1,17 @@
+{
+  "alpha": 0.01,
+  "threshold_rule": "strict > empirical normal-test-pixel budget",
+  "smoothing": "Gaussian sigma 4",
+  "arms": [
+    "base",
+    "in",
+    "cpl",
+    "incpl"
+  ],
+  "note": "evaluation diagnostic; not an independently calibrated deployment threshold",
+  "selected_examples": {
+    "screw": "/home/edison/VS_Projects/defectsGenerations/mvtec_dataset/screw/test/manipulated_front/014.png",
+    "capsule": "/home/edison/VS_Projects/defectsGenerations/mvtec_dataset/capsule/test/scratch/006.png",
+    "bottle": "/home/edison/VS_Projects/defectsGenerations/mvtec_dataset/bottle/test/contamination/015.png"
+  }
+}

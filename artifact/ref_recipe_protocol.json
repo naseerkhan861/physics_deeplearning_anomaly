@@ -1,0 +1,49 @@
+{
+  "purpose": "P0-1 stronger-recipe mechanism replication (round-18 review)",
+  "frozen_recipe": {
+    "lr": 0.0001,
+    "scheduler": "MultiStepLR",
+    "epochs": 700,
+    "anomaly_source": "external natural images (data/src_screw)",
+    "input": "gray-128",
+    "width": 16,
+    "device": "cuda",
+    "lambda_phys": 0.5,
+    "derivative_matching": "off",
+    "note": "the reconstruction network and its ordinary loss remain in every arm"
+  },
+  "arms": [
+    "base",
+    "in",
+    "cpl",
+    "incpl"
+  ],
+  "categories": [
+    "screw",
+    "capsule",
+    "bottle"
+  ],
+  "seeds": [
+    42,
+    0,
+    1
+  ],
+  "fits": 36,
+  "contrasts_frozen_before_runs": {
+    "synthetic_K": "K(i,s) = 100*[F(i,C=1,s) - F(i,C=0,s)] in percentage points, where F = A_smooth - A_perlin (image AUROC) at input state i, derivative matching off, seed s; reported for both input contexts and every seed with the absolute family scores",
+    "real_DBT": "D=incpl-in-cpl+base, B=incpl-max(in,cpl), T=incpl-base on real image AUROC",
+    "decision_rule": "mechanism persists => K adverse on screw under the stronger recipe; disappears => recipe dependence becomes the central finding; either outcome reported"
+  },
+  "evaluator_audit": "LIGHTWEIGHT factorial baseline run fact_screw_base (seed 42, 8-epoch gray-128 recipe): independently recomputed AUROC 0.374 matches results/raw/fact_screw_base_eval.json. Separately, the stronger-recipe pilot run ref_screw_base_s42 (this protocol's 700-epoch recipe) evaluates at 0.778028 (results/raw/ref_screw_base_s42_eval.json, released under artifact/ref_pilot/) -- above chance, as reported in the paper",
+  "deviations_from_original_DRAEM": [
+    "natural-image source from project data/src_screw rather than DTD textures",
+    "gray-128 input with base width 16 rather than RGB 256 with DRAEM widths",
+    "matched twin code base rather than the authors' implementation",
+    "external-source audit recipe as previously documented in Section V-B"
+  ],
+  "primary_contrast": {
+    "definition": "K on screw, input OFF, mean over seeds 42/0/1",
+    "rule": "adverse mean with >=2/3 seeds negative at full precision",
+    "timing_note": "the original protocol froze K's general definition before any runs; the primary-contrast specification (screw/input-off, 2-of-3 rule) was clarified in ref_protocol_analyze.py after the seed-42 screw pilot was observed (-31.3 pp) and before the remaining seeds and categories were scored. This is a clarification of the earlier plan, not a full preregistration claim; the earlier wording is retained in Git history"
+  }
+}

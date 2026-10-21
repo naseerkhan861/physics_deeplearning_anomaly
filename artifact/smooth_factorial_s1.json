@@ -1,0 +1,98 @@
+{
+  "screw/base": {
+    "perlin": 0.9788888888888889,
+    "smooth": 1.0
+  },
+  "screw/in": {
+    "perlin": 0.9644444444444444,
+    "smooth": 0.9777777777777777
+  },
+  "screw/rec": {
+    "perlin": 0.9488888888888889,
+    "smooth": 0.9833333333333334
+  },
+  "screw/cpl": {
+    "perlin": 0.8855555555555555,
+    "smooth": 0.71
+  },
+  "screw/inrec": {
+    "perlin": 0.97,
+    "smooth": 0.9644444444444444
+  },
+  "screw/incpl": {
+    "perlin": 0.8488888888888889,
+    "smooth": 0.47111111111111104
+  },
+  "screw/recpl": {
+    "perlin": 0.6822222222222222,
+    "smooth": 0.54
+  },
+  "screw/full": {
+    "perlin": 0.8111111111111111,
+    "smooth": 0.4655555555555556
+  },
+  "capsule/base": {
+    "perlin": 1.0,
+    "smooth": 1.0
+  },
+  "capsule/in": {
+    "perlin": 0.7032136105860114,
+    "smooth": 1.0
+  },
+  "capsule/rec": {
+    "perlin": 0.998109640831758,
+    "smooth": 1.0
+  },
+  "capsule/cpl": {
+    "perlin": 0.9962192816635161,
+    "smooth": 1.0
+  },
+  "capsule/inrec": {
+    "perlin": 0.8714555765595463,
+    "smooth": 1.0
+  },
+  "capsule/incpl": {
+    "perlin": 0.998109640831758,
+    "smooth": 1.0
+  },
+  "capsule/recpl": {
+    "perlin": 0.998109640831758,
+    "smooth": 1.0
+  },
+  "capsule/full": {
+    "perlin": 1.0,
+    "smooth": 1.0
+  },
+  "bottle/base": {
+    "perlin": 0.995,
+    "smooth": 1.0
+  },
+  "bottle/in": {
+    "perlin": 0.9974999999999999,
+    "smooth": 1.0
+  },
+  "bottle/rec": {
+    "perlin": 0.9974999999999999,
+    "smooth": 1.0
+  },
+  "bottle/cpl": {
+    "perlin": 0.865,
+    "smooth": 1.0
+  },
+  "bottle/inrec": {
+    "perlin": 0.9924999999999999,
+    "smooth": 1.0
+  },
+  "bottle/incpl": {
+    "perlin": 0.99,
+    "smooth": 1.0
+  },
+  "bottle/recpl": {
+    "perlin": 0.9925,
+    "smooth": 1.0
+  },
+  "bottle/full": {
+    "perlin": 0.9974999999999999,
+    "smooth": 1.0
+  }
+}

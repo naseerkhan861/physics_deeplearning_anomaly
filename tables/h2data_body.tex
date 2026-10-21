@@ -1,0 +1,13 @@
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+model & train frac & \shortstack{image\\AUROC} & \shortstack{image\\AP} & \shortstack{pixel\\AUROC} \\
+\midrule
+PGDN & 100\% & 1.000 & 1.000 & 0.951 \\
+\draem{} & 100\% & 0.813 & 0.812 & 0.767 \\
+PGDN & 60\% & 1.000 & 1.000 & 0.917 \\
+\draem{} & 60\% & 0.892 & 0.926 & 0.956 \\
+PGDN & 40\% & 0.994 & 0.996 & 0.632 \\
+\draem{} & 40\% & 0.668 & 0.699 & 0.482 \\
+\bottomrule
+\end{tabular}

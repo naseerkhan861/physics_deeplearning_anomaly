@@ -1,0 +1,18 @@
+{
+  "method": "pgdn:ref_screw_base_s42",
+  "dataset": "mvtec",
+  "class_name": null,
+  "n_test": 160,
+  "n_anomalous": 119,
+  "image_auroc": 0.7780282844845255,
+  "image_ap": 0.9001550161119691,
+  "pixel_auroc": 0.8200806357617627,
+  "per_severity": {
+    "unknown": {
+      "n_anomalous": 119,
+      "image_auroc": 0.7780282844845255,
+      "image_ap": 0.9001550161119691,
+      "pixel_auroc": 0.8104573532440287
+    }
+  }
+}

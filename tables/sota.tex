@@ -1,0 +1,24 @@
+% auto-generated: tab:sota
+\begin{table*}[!t]
+\caption{Published state of the art 2021--2025 (MVTec AD means; venues per the primary publication records; reference context, not capacity-matched: RGB 224--256$^2$). All methods use large-scale pretrained backbones except DRAEM, whose networks are trained from scratch (lr $10^{-4}$, MultiStepLR, DTD anomaly source); CLIP-based methods (WinCLIP) use web-scale vision--language pretraining rather than ImageNet classification. PGDN entries are 15-category macro means; the twin's macro pixel AUROC is given in the last column for the same aggregation.} \label{tab:sota}
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+method (published) & venue & MVTec img & MVTec pix & VisA img &  \\
+\midrule
+PaDiM~\cite{ref1} & ICPR 2021 & 0.953 & 0.979 & -- \\
+FastFlow~\cite{ref9} & preprint 2021 & 0.994 & -- & -- \\
+DRAEM~\cite{ref6} & ICCV 2021 & 0.980 & 0.973 & -- \\
+RD4AD~\cite{ref3} & CVPR 2022 & 0.985 & 0.985 & -- \\
+PatchCore~\cite{ref2} & CVPR 2022 & 0.991 (0.996) & 0.981 (0.984) & -- \\
+WinCLIP~\cite{ref10} & CVPR 2023 & 0.918 (0.931) & 0.851 (0.952) & 0.781 \\
+SimpleNet~\cite{ref4} & CVPR 2023 & 0.996 & 0.984 & -- \\
+EfficientAD~\cite{ref5} & WACV 2024 & 0.991 & -- & -- \\
+RealNet~\cite{ref7} & CVPR 2024 & 0.995 & -- & -- \\
+GLASS~\cite{ref8} & ECCV 2024 & 0.999 & -- & 0.988 \\
+AF-CLIP~\cite{ref20} & 2025 & 0.929 & 0.923 & -- \\
+\textbf{PGDN (this work, lite)} & -- & \textbf{0.695} macro & \textbf{0.754} macro & -- & (twin 0.721 pix) \\
+\bottomrule
+\end{tabular}
+\end{table*}

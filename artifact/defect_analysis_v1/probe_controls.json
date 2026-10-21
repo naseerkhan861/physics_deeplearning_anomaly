@@ -1,0 +1,42 @@
+{
+  "zero": {
+    "delta_mask_mean_p": 0.0,
+    "delta_bg_mean_p": 0.0,
+    "delta_seg_loss": 0.0,
+    "linear_delta_seg_loss": 0.0,
+    "radius": 0.0,
+    "eta": -0.0
+  },
+  "coupling": {
+    "delta_mask_mean_p": -2.848e-05,
+    "delta_bg_mean_p": -6.801e-05,
+    "delta_seg_loss": -1.74e-06,
+    "linear_delta_seg_loss": -1.57e-06,
+    "radius": 1e-06,
+    "eta": -1.374e-05
+  },
+  "opposite": {
+    "delta_mask_mean_p": 5.056e-05,
+    "delta_bg_mean_p": 6.878e-05,
+    "delta_seg_loss": 1.71e-06,
+    "linear_delta_seg_loss": 1.57e-06,
+    "radius": -1e-06,
+    "eta": 1.374e-05
+  },
+  "random0": {
+    "delta_mask_mean_p": -1.01e-06,
+    "delta_bg_mean_p": -3.9e-07,
+    "delta_seg_loss": -2.5e-07,
+    "linear_delta_seg_loss": -1e-08,
+    "radius": 1e-06,
+    "eta": 4e-08
+  },
+  "half": {
+    "delta_mask_mean_p": -1.976e-05,
+    "delta_bg_mean_p": -3.325e-05,
+    "delta_seg_loss": -8.1e-07,
+    "linear_delta_seg_loss": -7.8e-07,
+    "radius": 5e-07,
+    "eta": -6.87e-06
+  }
+}

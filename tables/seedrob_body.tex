@@ -1,0 +1,13 @@
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+benchmark & model & \shortstack{image\\AUROC} & \shortstack{image\\AP} & \shortstack{pixel\\AUROC} \\
+\midrule
+MVTec AD screw & PGDN & 0.764$\pm$0.050 & 0.893$\pm$0.042 & 0.956$\pm$0.002 \\
+MVTec AD screw & \draem{} & 0.220$\pm$0.155 & 0.627$\pm$0.062 & 0.792$\pm$0.184 \\
+MVTec AD screw & PatchCore-lite & 0.712$\pm$0.010 & 0.866$\pm$0.010 & 0.924$\pm$0.006 \\
+CONSTRUCT & PGDN & 0.999$\pm$0.002 & 0.999$\pm$0.002 & 0.954$\pm$0.004 \\
+CONSTRUCT & \draem{} & 0.926$\pm$0.069 & 0.934$\pm$0.072 & 0.910$\pm$0.087 \\
+CONSTRUCT & PatchCore-lite & 1.000$\pm$0.000 & 1.000$\pm$0.000 & 0.988$\pm$0.000 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,215 @@
+{
+  "definition": "g_seg=grad L_seg, g_C=grad(lambda_C*C) on shared parameters; norm ratio and cosine per family, mean over 2 batches x 8 images; lambda_C=0.5",
+  "runs": {
+    "screw/cpl": {
+      "perlin": {
+        "norm_ratio": 1.640239417552948,
+        "cosine": -0.9713699221611023,
+        "blocks": {
+          "recon_unet": {
+            "norm_ratio": 1.4159965515136719,
+            "cosine": -0.866094559431076
+          },
+          "seg_unet": {
+            "norm_ratio": 1.6418718099594116,
+            "cosine": -0.9719835817813873
+          }
+        }
+      },
+      "smooth": {
+        "norm_ratio": 0.7296795845031738,
+        "cosine": -0.9210830330848694,
+        "blocks": {
+          "recon_unet": {
+            "norm_ratio": 2.0280168056488037,
+            "cosine": 0.09998168796300888
+          },
+          "seg_unet": {
+            "norm_ratio": 0.7240113914012909,
+            "cosine": -0.9322854280471802
+          }
+        }
+      }
+    },
+    "screw/incpl": {
+      "perlin": {
+        "norm_ratio": 10.761627197265625,
+        "cosine": -0.6008673012256622,
+        "blocks": {
+          "recon_unet": {
+            "norm_ratio": 3.4432148933410645,
+            "cosine": -0.37044548988342285
+          },
+          "seg_unet": {
+            "norm_ratio": 10.998433589935303,
+            "cosine": -0.6114347279071808
+          }
+        }
+      },
+      "smooth": {
+        "norm_ratio": 2.47513484954834,
+        "cosine": -0.9364408850669861,
+        "blocks": {
+          "recon_unet": {
+            "norm_ratio": 2.8811956644058228,
+            "cosine": -0.951645165681839
+          },
+          "seg_unet": {
+            "norm_ratio": 2.471400260925293,
+            "cosine": -0.9362859129905701
+          }
+        }
+      }
+    },
+    "screw/full": {
+      "perlin": {
+        "norm_ratio": 4.154005646705627,
+        "cosine": -0.6625403463840485,
+        "blocks": {
+          "recon_unet": {
+            "norm_ratio": 8.493562936782837,
+            "cosine": -0.1658633053302765
+          },
+          "seg_unet": {
+            "norm_ratio": 3.7736722230911255,
+            "cosine": -0.8344034850597382
+          }
+        }
+      },
+      "smooth": {
+        "norm_ratio": 1.64784836769104,
+        "cosine": -0.5881348848342896,
+        "blocks": {
+          "recon_unet": {
+            "norm_ratio": 3.4485265016555786,
+            "cosine": 0.091072678565979
+          },
+          "seg_unet": {
+            "norm_ratio": 1.4509532451629639,
+            "cosine": -0.7730377912521362
+          }
+        }
+      }
+    },
+    "capsule/cpl": {
+      "perlin": {
+        "norm_ratio": 1.5235854983329773,
+        "cosine": 0.993914008140564,
+        "blocks": {
+          "recon_unet": {
+            "norm_ratio": 1.8301003575325012,
+            "cosine": 0.5668119341135025
+          },
+          "seg_unet": {
+            "norm_ratio": 1.523390531539917,
+            "cosine": 0.9942346215248108
+          }
+        }
+      },
+      "smooth": {
+        "norm_ratio": 4.111276388168335,
+        "cosine": 0.5471193194389343,
+        "blocks": {
+          "recon_unet": {
+            "norm_ratio": 1.8465747833251953,
+            "cosine": -0.7070698142051697
+          },
+          "seg_unet": {
+            "norm_ratio": 4.139239311218262,
+            "cosine": 0.5516191273927689
+          }
+        }
+      }
+    },
+    "capsule/incpl": {
+      "perlin": {
+        "norm_ratio": 1.6421113014221191,
+        "cosine": 0.560529351234436,
+        "blocks": {
+          "recon_unet": {
+            "norm_ratio": 1.024007648229599,
+            "cosine": -0.02300971932709217
+          },
+          "seg_unet": {
+            "norm_ratio": 1.6679681539535522,
+            "cosine": 0.5799838006496429
+          }
+        }
+      },
+      "smooth": {
+        "norm_ratio": 2.1325888633728027,
+        "cosine": -0.04223722964525223,
+        "blocks": {
+          "recon_unet": {
+            "norm_ratio": 1.242349624633789,
+            "cosine": -0.8106344044208527
+          },
+          "seg_unet": {
+            "norm_ratio": 2.1932982206344604,
+            "cosine": -0.004478834569454193
+          }
+        }
+      }
+    },
+    "bottle/cpl": {
+      "perlin": {
+        "norm_ratio": 2.2042776942253113,
+        "cosine": 0.6220130324363708,
+        "blocks": {
+          "recon_unet": {
+            "norm_ratio": 1.585745930671692,
+            "cosine": 0.4130084961652756
+          },
+          "seg_unet": {
+            "norm_ratio": 2.26544725894928,
+            "cosine": 0.6416375041007996
+          }
+        }
+      },
+      "smooth": {
+        "norm_ratio": 4.4747772216796875,
+        "cosine": -0.07922058179974556,
+        "blocks": {
+          "recon_unet": {
+            "norm_ratio": 3.018375515937805,
+            "cosine": -0.01667170599102974
+          },
+          "seg_unet": {
+            "norm_ratio": 4.707636833190918,
+            "cosine": -0.08835587557405233
+          }
+        }
+      }
+    },
+    "bottle/incpl": {
+      "perlin": {
+        "norm_ratio": 1.7889054417610168,
+        "cosine": -0.02382045052945614,
+        "blocks": {
+          "recon_unet": {
+            "norm_ratio": 1.5075230598449707,
+            "cosine": -0.17052997648715973
+          },
+          "seg_unet": {
+            "norm_ratio": 1.849400281906128,
+            "cosine": 0.004745688289403915
+          }
+        }
+      },
+      "smooth": {
+        "norm_ratio": 1.7893521785736084,
+        "cosine": -0.9368472397327423,
+        "blocks": {
+          "recon_unet": {
+            "norm_ratio": 2.2031333446502686,
+            "cosine": -0.9691473841667175
+          },
+          "seg_unet": {
+            "norm_ratio": 1.734392523765564,
+            "cosine": -0.9355519711971283
+          }
+        }
+      }
+    }
+  }
+}

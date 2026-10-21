@@ -1,0 +1,139 @@
+{
+  "pooled_edge_percentile_threshold": 1.0662342309951782,
+  "per_category": {
+    "bottle": {
+      "edge_density_pooled": 0.07232666015625,
+      "stationarity_cv": 0.7556694954633713,
+      "z_in_minus_out": 0.04740048919819176,
+      "delta": -0.10132275132275148
+    },
+    "cable": {
+      "edge_density_pooled": 0.0764923095703125,
+      "stationarity_cv": 0.3804392397403717,
+      "z_in_minus_out": 0.06438671416886474,
+      "delta": -0.18128435782108943
+    },
+    "capsule": {
+      "edge_density_pooled": 0.015033224354619566,
+      "stationarity_cv": 0.8140077694602634,
+      "z_in_minus_out": 0.30841650475782373,
+      "delta": 0.027124052652572783
+    },
+    "carpet": {
+      "edge_density_pooled": 0.15159170968191965,
+      "stationarity_cv": 0.07276424087051835,
+      "z_in_minus_out": -0.03687232988101713,
+      "delta": -0.24197431781701445
+    },
+    "grid": {
+      "edge_density_pooled": 0.10741024925595238,
+      "stationarity_cv": 0.0829839672715891,
+      "z_in_minus_out": 0.052674913484799246,
+      "delta": 0.2263993316624895
+    },
+    "hazelnut": {
+      "edge_density_pooled": 0.0003173828125,
+      "stationarity_cv": 0.8285794362425805,
+      "z_in_minus_out": 0.5964987267340932,
+      "delta": 0.05773809523809548
+    },
+    "leather": {
+      "edge_density_pooled": 0.0,
+      "stationarity_cv": 0.11612835805863142,
+      "z_in_minus_out": 0.2904101474129635,
+      "delta": -0.05242300724637694
+    },
+    "metal_nut": {
+      "edge_density_pooled": 0.054906671697443184,
+      "stationarity_cv": 0.6106226959011771,
+      "z_in_minus_out": 0.14069833263995188,
+      "delta": -0.5827631150211796
+    },
+    "pill": {
+      "edge_density_pooled": 0.03708589993990385,
+      "stationarity_cv": 0.8737462369295267,
+      "z_in_minus_out": 0.2538821029721211,
+      "delta": -0.19267139479905437
+    },
+    "screw": {
+      "edge_density_pooled": 0.00415802001953125,
+      "stationarity_cv": 1.159107780456543,
+      "z_in_minus_out": 0.5182788804674349,
+      "delta": 0.07959281273484997
+    },
+    "tile": {
+      "edge_density_pooled": 0.04930160984848485,
+      "stationarity_cv": 0.06025854611035549,
+      "z_in_minus_out": -0.011125020638463046,
+      "delta": -0.006613756613756627
+    },
+    "toothbrush": {
+      "edge_density_pooled": 0.044031778971354164,
+      "stationarity_cv": 0.8954587429761887,
+      "z_in_minus_out": 0.3332595614095529,
+      "delta": -0.0805555555555556
+    },
+    "transistor": {
+      "edge_density_pooled": 0.08571929931640625,
+      "stationarity_cv": 0.41388322934508326,
+      "z_in_minus_out": 0.07201241301372646,
+      "delta": -0.3199999999999999
+    },
+    "wood": {
+      "edge_density_pooled": 0.00020559210526315788,
+      "stationarity_cv": 0.1469387619903213,
+      "z_in_minus_out": 0.17158600091934204,
+      "delta": 0.005555555555555758
+    },
+    "zipper": {
+      "edge_density_pooled": 0.034717559814453125,
+      "stationarity_cv": 0.40864276327192783,
+      "z_in_minus_out": 0.1701758014304297,
+      "delta": -0.3227415966386554
+    }
+  },
+  "held_out": {
+    "edge_density_pooled_fwd": {
+      "correct": 3,
+      "n": 8,
+      "constant_correct": 6,
+      "binom_p": 0.7265625,
+      "rho_overall": -0.25755085402885547
+    },
+    "edge_density_pooled_rev": {
+      "correct": 5,
+      "n": 7,
+      "constant_correct": 4,
+      "binom_p": 0.453125,
+      "rho_overall": -0.25755085402885547
+    },
+    "stationarity_cv_fwd": {
+      "correct": 6,
+      "n": 8,
+      "constant_correct": 6,
+      "binom_p": 0.2890625,
+      "rho_overall": 0.007652415501398304
+    },
+    "stationarity_cv_rev": {
+      "correct": 2,
+      "n": 7,
+      "constant_correct": 4,
+      "binom_p": 0.453125,
+      "rho_overall": 0.007652415501398304
+    },
+    "z_in_minus_out_fwd": {
+      "correct": 5,
+      "n": 8,
+      "constant_correct": 6,
+      "binom_p": 0.7265625,
+      "rho_overall": 0.3292339623398565
+    },
+    "z_in_minus_out_rev": {
+      "correct": 2,
+      "n": 7,
+      "constant_correct": 4,
+      "binom_p": 0.453125,
+      "rho_overall": 0.3292339623398565
+    }
+  }
+}

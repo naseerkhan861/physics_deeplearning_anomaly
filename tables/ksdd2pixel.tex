@@ -1,0 +1,16 @@
+% auto-generated: tab:ksdd2pixel
+\begin{table}[!t]
+\caption{KolektorSDD2 localization from the canonical paired evaluation (official GT masks; 1004 test images, 110 anomalous; identical seeded pixel indices for both arms --- 4096 per image at gray-128, 4.11M pooled, and 16384 at RGB-256, 16.45M pooled; AP uses the recall-increment convention of scikit-learn). PGDN-minus-twin pixel-AUROC difference, 95\% image-cluster bootstrap CIs: $[-0.066,+0.064]$ at gray-128 (includes zero: a difference is not established, which is not equivalence) and $[+0.108,+0.275]$ at RGB-256, conditional on the tested checkpoints and protocol; pixel AP descriptively favours PGDN at both operating points, and both arms deteriorate absolutely at RGB-256.} \label{tab:ksdd2pixel}
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+arm & pix AUROC & pix AP \\
+\midrule
+PGDN (gray-128) & 0.846 & 0.377 \\
+\draem{} (gray-128) & 0.844 & 0.224 \\
+PGDN (RGB-256) & 0.719 & 0.145 \\
+\draem{} (RGB-256) & 0.526 & 0.025 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,15 @@
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+configuration & screw & bottle & capsule & cashew & CONSTRUCT & real-cat.\ macro \\
+\midrule
+baseline & 0.374 & 0.847 & 0.496 & 0.897 & 0.638 & 0.654 \\
+input $z$ only & 0.437 & 0.890 & 0.600 & 0.940 & 1.000 & 0.717 \\
+recon.~loss only & 0.473 & 0.844 & 0.411 & 0.560 & 0.813 & 0.572 \\
+coupling only & 0.870 & 0.659 & 0.417 & 0.920 & 0.996 & 0.716 \\
+input + recon. & 0.485 & 0.890 & 0.487 & 0.783 & 1.000 & 0.661 \\
+input + coupling & 0.634 & 0.657 & 0.509 & 0.838 & 1.000 & 0.659 \\
+both losses & 0.836 & 0.747 & 0.493 & 0.911 & 0.996 & 0.747 \\
+full PGDN & 0.734 & 0.728 & 0.522 & 0.921 & 1.000 & 0.726 \\
+\bottomrule
+\end{tabular}

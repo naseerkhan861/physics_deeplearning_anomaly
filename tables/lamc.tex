@@ -1,0 +1,17 @@
+% auto-generated: tab:lamc
+\begin{table*}[!t]
+\caption{Coupling-weight intervention on the screw coupling-only arm (8-epoch gray recipe, 30 paired backgrounds, fixed evaluation seed). Seed 42: CUDA-trained weights with the CPU-trained factorial baseline reused as C-off. Seed 0: fully matched CUDA controls including C-off. The smooth-defect failure onsets between $\lambda_C=0.1$ and $0.25$ at both seeds, and the over-weighted term degrades the Perlin score at $0.5$--$1.0$; absolute deterioration accompanies the family gap. The sweep supports deterioration between the sampled weights in this setting, not a universal critical threshold.} \label{tab:lamc}
+\centering\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+$\lambda_C$ & perlin s42 & smooth s42 & $\Delta$ s42 & perlin s0 & smooth s0 & $\Delta$ s0 \\
+\midrule
+$0$ (C-off) & 0.961 & 0.987 & +2.6 & 1.000 & 1.000 & +0.0 \\
+$0.1$ & 0.964 & 0.981 & +1.7 & 0.993 & 0.998 & +0.4 \\
+$0.25$ & 0.938 & 0.760 & -17.8 & 0.957 & 0.796 & -16.1 \\
+$0.5$ & 0.703 & 0.532 & -17.1 & 0.809 & 0.474 & -33.4 \\
+$1.0$ & 0.573 & 0.473 & -10.0 & -- & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table*}

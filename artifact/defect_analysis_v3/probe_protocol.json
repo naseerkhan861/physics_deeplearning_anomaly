@@ -1,0 +1,17 @@
+{
+  "pilot": {
+    "1e-07": {
+      "obs_over_linear": 0.937,
+      "halved_obs_over_linear": 4.034
+    },
+    "3e-07": {
+      "obs_over_linear": 0.943,
+      "halved_obs_over_linear": 1.625
+    },
+    "1e-06": {
+      "obs_over_linear": 1.107,
+      "halved_obs_over_linear": 1.026
+    }
+  },
+  "frozen_radius": 1e-06
+}

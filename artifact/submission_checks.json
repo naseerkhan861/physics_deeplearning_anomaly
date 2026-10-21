@@ -1,0 +1,94 @@
+{
+  "analysis": "paired endpoint sensitivity; descriptive, not an inferential test",
+  "source_sha256": {
+    "router_results.json": "eebe59e4756672c0e785b1b04810000db3a3ee5f22c936de63ddbee4154cb5d7",
+    "repeatability.json": "bd52145615cc67e73633594cd4391dde1a94c19b5913d8e97f40321f576d3ebf"
+  },
+  "rgb": {
+    "categories": 15,
+    "seeds": [
+      "42",
+      "0",
+      "1"
+    ],
+    "paired_cells": 45,
+    "effect_units": "image-AUROC percentage points, PGDN minus twin",
+    "macro_effect_pp": -11.239600033279135,
+    "seed_macro_effects_pp": {
+      "42": -12.322162615484975,
+      "0": -11.899476624639384,
+      "1": -9.497160859713047
+    },
+    "category_mean_effects_pp": {
+      "bottle": -10.13227513227514,
+      "cable": -18.128435782108944,
+      "capsule": 2.7124052652572828,
+      "carpet": -24.197431781701443,
+      "grid": 22.63993316624895,
+      "hazelnut": 5.7738095238095335,
+      "leather": -5.2423007246376825,
+      "metal_nut": -58.276311502117956,
+      "pill": -19.267139479905435,
+      "screw": 7.959281273485005,
+      "tile": -0.6613756613756591,
+      "toothbrush": -8.055555555555557,
+      "transistor": -32.0,
+      "wood": 0.5555555555555608,
+      "zipper": -32.27415966386555
+    },
+    "median_category_mean_effect_pp": -8.055555555555557,
+    "positive_category_means": 5,
+    "positive_cells": 10,
+    "categories_winning_all_seeds": [],
+    "categories_losing_all_seeds": [
+      "bottle",
+      "cable",
+      "carpet",
+      "leather",
+      "metal_nut",
+      "pill",
+      "toothbrush",
+      "transistor",
+      "zipper"
+    ],
+    "leave_one_category_out_pp": {
+      "bottle": -11.318694669065135,
+      "cable": -10.747540336934149,
+      "capsule": -12.236171840317452,
+      "carpet": -10.314040622677542,
+      "grid": -13.659566690388285,
+      "hazelnut": -12.454843573071184,
+      "leather": -11.667978555324954,
+      "metal_nut": -7.879834928362077,
+      "pill": -10.666204358520114,
+      "screw": -12.610948698048002,
+      "tile": -11.995187488415098,
+      "toothbrush": -11.467031781687963,
+      "transistor": -9.756714321370502,
+      "wood": -12.082111146767328,
+      "zipper": -9.73713148823725
+    },
+    "leave_one_category_out_range_pp": [
+      -13.659566690388285,
+      -7.879834928362077
+    ],
+    "scope": "Fixed categories, test images and fitted checkpoints; no resampling or new inference, and no assumption of 45 independent datasets."
+  },
+  "repeatability": {
+    "nondeterministic_runs": 4,
+    "nondeterministic_auroc_range": [
+      0.23242467718794835,
+      0.35540069686411146
+    ],
+    "deterministic_runs": 2,
+    "deterministic_aurocs": [
+      0.45460135273621644,
+      0.45460135273621644
+    ],
+    "deterministic_spread": 0.0,
+    "distinct_augmentation_stream_hashes": [
+      "b30d9d297a"
+    ],
+    "scope": "Repeatability controls for a separate screw baseline configuration; repeated values do not establish evaluation validity or competitive accuracy."
+  }
+}

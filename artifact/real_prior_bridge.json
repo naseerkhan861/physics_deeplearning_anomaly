@@ -1,0 +1,68 @@
+{
+  "protocol": "defects split at the median of mean prior response z inside the GT mask (z from the full-PGDN checkpoint's own prior computation); image AUROC per group uses all defect-free test images as negatives; seed-42 arms",
+  "categories": {
+    "screw": {
+      "n_defects": 119,
+      "z_median": 0.6343379020690918,
+      "n_weak": 59,
+      "base": {
+        "weak": 0.351,
+        "strong": 0.397
+      },
+      "in": {
+        "weak": 0.42,
+        "strong": 0.454
+      },
+      "cpl": {
+        "weak": 0.819,
+        "strong": 0.92
+      },
+      "incpl": {
+        "weak": 0.57,
+        "strong": 0.696
+      }
+    },
+    "capsule": {
+      "n_defects": 109,
+      "z_median": 0.43682366609573364,
+      "n_weak": 54,
+      "base": {
+        "weak": 0.49,
+        "strong": 0.501
+      },
+      "in": {
+        "weak": 0.645,
+        "strong": 0.556
+      },
+      "cpl": {
+        "weak": 0.408,
+        "strong": 0.425
+      },
+      "incpl": {
+        "weak": 0.509,
+        "strong": 0.508
+      }
+    },
+    "bottle": {
+      "n_defects": 63,
+      "z_median": 0.1969507336616516,
+      "n_weak": 31,
+      "base": {
+        "weak": 0.829,
+        "strong": 0.864
+      },
+      "in": {
+        "weak": 0.898,
+        "strong": 0.883
+      },
+      "cpl": {
+        "weak": 0.587,
+        "strong": 0.728
+      },
+      "incpl": {
+        "weak": 0.544,
+        "strong": 0.767
+      }
+    }
+  }
+}

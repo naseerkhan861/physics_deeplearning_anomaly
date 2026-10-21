@@ -1,0 +1,87 @@
+{
+  "config": "screw baseline, seed 42, 8 epochs, lr 1e-3, fractal, gray-128",
+  "runs": [
+    {
+      "rep": 0,
+      "deterministic": false,
+      "aug_stream_hash": "b30d9d297a",
+      "final_loss": 0.057254,
+      "image_auroc": 0.23242467718794835,
+      "pixel_auroc": 0.933219601819539,
+      "orientation_ok": false,
+      "mean_score_good": 0.2982237428426743,
+      "mean_score_bad": 0.2693825617432594
+    },
+    {
+      "rep": 1,
+      "deterministic": false,
+      "aug_stream_hash": "b30d9d297a",
+      "final_loss": 0.056646,
+      "image_auroc": 0.35540069686411146,
+      "pixel_auroc": 0.9315424236219163,
+      "orientation_ok": true,
+      "mean_score_good": 0.33097965915997823,
+      "mean_score_bad": 0.3379280805587769
+    },
+    {
+      "rep": 2,
+      "deterministic": false,
+      "aug_stream_hash": "b30d9d297a",
+      "final_loss": 0.057019,
+      "image_auroc": 0.26501332240213155,
+      "pixel_auroc": 0.9254257742211551,
+      "orientation_ok": false,
+      "mean_score_good": 0.2603300968805949,
+      "mean_score_bad": 0.25625464916229246
+    },
+    {
+      "rep": 3,
+      "deterministic": false,
+      "aug_stream_hash": "b30d9d297a",
+      "final_loss": 0.058394,
+      "image_auroc": 0.326091412174626,
+      "pixel_auroc": 0.9433033302333869,
+      "orientation_ok": false,
+      "mean_score_good": 0.274801275630792,
+      "mean_score_bad": 0.2612569510936737
+    },
+    {
+      "rep": 100,
+      "deterministic": true,
+      "aug_stream_hash": "b30d9d297a",
+      "final_loss": 0.054965,
+      "image_auroc": 0.45460135273621644,
+      "pixel_auroc": 0.8700830037734126,
+      "orientation_ok": true,
+      "mean_score_good": 0.3374995723366737,
+      "mean_score_bad": 0.38570397545893986
+    },
+    {
+      "rep": 101,
+      "deterministic": true,
+      "aug_stream_hash": "b30d9d297a",
+      "final_loss": 0.054965,
+      "image_auroc": 0.45460135273621644,
+      "pixel_auroc": 0.8700830037734126,
+      "orientation_ok": true,
+      "mean_score_good": 0.3374995723366737,
+      "mean_score_bad": 0.38570397545893986
+    }
+  ],
+  "summary": {
+    "nondeterministic_image_auroc": [
+      0.2324,
+      0.3554,
+      0.265,
+      0.3261
+    ],
+    "nondeterministic_spread": 0.12297601967616312,
+    "deterministic_image_auroc": [
+      0.4546,
+      0.4546
+    ],
+    "deterministic_spread": 0.0,
+    "aug_streams_identical": true,
+    "orientation_ok_all": false
+  }
+}

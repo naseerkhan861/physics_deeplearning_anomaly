@@ -1,0 +1,11 @@
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+$\lambda_{\mathrm{phys}}$ & model & \shortstack{image\\AUROC} & \shortstack{image\\AP} & \shortstack{pixel\\AUROC} \\
+\midrule
+0.0 & \shortstack[l]{\draem{}\\($\lambda{=}0$, arch off)} & 0.813 & 0.812 & 0.767 \\
+0.1 & PGDN lambda=0.1 & 1.000 & 1.000 & 0.930 \\
+0.5 & PGDN lambda=0.5 & 1.000 & 1.000 & 0.951 \\
+1.0 & PGDN lambda=1.0 & 1.000 & 1.000 & 0.951 \\
+\bottomrule
+\end{tabular}

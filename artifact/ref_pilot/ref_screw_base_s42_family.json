@@ -1,0 +1,6 @@
+{
+  "run": "ref_screw_base_s42",
+  "n_backgrounds": 30,
+  "perlin": 0.9966666666666667,
+  "smooth": 1.0
+}

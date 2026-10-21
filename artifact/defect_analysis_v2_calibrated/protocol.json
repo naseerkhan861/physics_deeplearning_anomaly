@@ -1,0 +1,22 @@
+{
+  "alpha": 0.01,
+  "threshold_rule": "thresholds frozen on the first half of the normal test images (calibration split), evaluated on the held-out half; producer: tools/measure_coverage_calibrated.py (released in code/tools/); this v2 record supersedes the v1 all-normal-pixel procedure for the calibrated check",
+  "smoothing": "Gaussian sigma 4",
+  "arms": [
+    "base",
+    "in",
+    "cpl",
+    "incpl"
+  ],
+  "note": "evaluation diagnostic; not an independently calibrated deployment threshold",
+  "selected_examples": {
+    "screw": "/home/edison/VS_Projects/defectsGenerations/mvtec_dataset/screw/test/manipulated_front/014.png",
+    "capsule": "/home/edison/VS_Projects/defectsGenerations/mvtec_dataset/capsule/test/scratch/006.png",
+    "bottle": "/home/edison/VS_Projects/defectsGenerations/mvtec_dataset/bottle/test/contamination/015.png"
+  },
+  "normal_split": {
+    "calibration": "first half of normal test items in loader order",
+    "test": "remaining half",
+    "n_test_normals_per_category": "10-21"
+  }
+}
