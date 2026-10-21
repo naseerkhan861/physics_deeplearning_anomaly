@@ -21,6 +21,7 @@ and the real-defect moderation analysis.
 | `gradient_probe.py`, `gradient_probe_params.py` | Output-space and parameter-level coupling-gradient probes |
 | `real_moderation.py`, `moderation_bootstrap.py`, `real_prior_bridge.py` | Real-defect moderation analysis and the released 10,000-replicate paired bootstrap |
 | `tools/` | Defect-level coverage exports, spatial probes, batch-context diagnostic |
+| `checkpoints/` | 15 decisive trained checkpoints in the `runs/<id>/last.pt` layout: the 12 seed-42 gray-128 factorial arms (screw/capsule/bottle x base/in/cpl/incpl), the screw full-PGDN arm, and the gray-128 KolektorSDD2 pair; SHA-256 prefixes in `results/run_manifest.csv` |
 | `results/` | Released result records (factorial endpoints, family sweeps, moderation records, routing pairs, run manifest with checkpoint hashes) backing the paper's tables and figures |
 
 ## Setup
@@ -54,6 +55,16 @@ python real_moderation.py && python moderation_bootstrap.py
 
 # 5. verify released records
 python repeatability.py   # same-configuration repeat spread
+```
+
+## Verify directly from the released checkpoints
+
+```bash
+export PGDN_RUNS_ROOT=checkpoints    # scripts resolve checkpoints/<run>/last.pt
+python eval.py --dataset mvtec --data-root <MVTEC>/screw \
+  --checkpoint checkpoints/fact_screw_cpl/last.pt --seed 42 \
+  --out /tmp/check.json --device cpu          # real image AUROC
+python defect_family_sweep.py                   # Figure: paired Perlin/smooth assay
 ```
 
 Training uses one fixed synthetic-defect realization per training image
