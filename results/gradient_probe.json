@@ -1,0 +1,86 @@
+{
+  "screw/cpl": {
+    "perlin": {
+      "oppose_w": 0.7637550681829453,
+      "sign_coup_on_mask": 0.14844273906201125,
+      "mean_coup": 2.0767934472587514e-06,
+      "pixels": 38905
+    },
+    "smooth": {
+      "oppose_w": 0.9017819136381149,
+      "sign_coup_on_mask": 0.6221692338585854,
+      "mean_coup": 4.077122585499637e-06,
+      "pixels": 57826
+    }
+  },
+  "screw/full": {
+    "perlin": {
+      "oppose_w": 0.8700186848640442,
+      "sign_coup_on_mask": 0.22900454390328379,
+      "mean_coup": 2.3519968067375884e-06,
+      "pixels": 38905
+    },
+    "smooth": {
+      "oppose_w": 0.9211910784244537,
+      "sign_coup_on_mask": 0.6650913208723068,
+      "mean_coup": 3.0294697388910665e-06,
+      "pixels": 57826
+    }
+  },
+  "capsule/cpl": {
+    "perlin": {
+      "oppose_w": 0.5471466824412345,
+      "sign_coup_on_mask": -0.293138593621552,
+      "mean_coup": -1.179035518106275e-06,
+      "pixels": 38905
+    },
+    "smooth": {
+      "oppose_w": 0.8003283023834229,
+      "sign_coup_on_mask": 0.3908241048455238,
+      "mean_coup": 1.1262575629444882e-06,
+      "pixels": 57826
+    }
+  },
+  "capsule/full": {
+    "perlin": {
+      "oppose_w": 0.7586987361311912,
+      "sign_coup_on_mask": -0.20106090563349427,
+      "mean_coup": -5.00884229737153e-07,
+      "pixels": 38905
+    },
+    "smooth": {
+      "oppose_w": 0.896339163184166,
+      "sign_coup_on_mask": 0.5058033481240273,
+      "mean_coup": 1.240973766769571e-06,
+      "pixels": 57826
+    }
+  },
+  "bottle/cpl": {
+    "perlin": {
+      "oppose_w": 0.6042348191142082,
+      "sign_coup_on_mask": -0.01151514332741499,
+      "mean_coup": 8.333258598725024e-08,
+      "pixels": 38905
+    },
+    "smooth": {
+      "oppose_w": 0.7318214893341064,
+      "sign_coup_on_mask": 0.3571519419550896,
+      "mean_coup": 2.4284198048007966e-06,
+      "pixels": 57826
+    }
+  },
+  "bottle/full": {
+    "perlin": {
+      "oppose_w": 0.8019575476646423,
+      "sign_coup_on_mask": 0.1329425936564803,
+      "mean_coup": 1.3803855416938404e-06,
+      "pixels": 38905
+    },
+    "smooth": {
+      "oppose_w": 0.8595988869667053,
+      "sign_coup_on_mask": 0.48975163251161574,
+      "mean_coup": 4.360055174856825e-06,
+      "pixels": 57826
+    }
+  }
+}

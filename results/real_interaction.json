@@ -1,0 +1,110 @@
+{
+  "definition": "D = 100*(AUROC(incpl)-AUROC(in)-AUROC(cpl)+AUROC(base)) on real MVTec defects, reconstruction off; per-image arrays from real_moderation.json; all defect-free test images as negatives; the three-category panel comes from the released per-image arrays, the cashew extension from the standard factorial evaluation records listed under cashew_endpoints",
+  "per_seed": {
+    "42": {
+      "screw": -30.0,
+      "capsule": -1.2,
+      "bottle": -4.5,
+      "macro3": -11.9,
+      "cashew": -12.5,
+      "macro4": -12.0,
+      "macro3_full": -11.908501337563386,
+      "macro4_full": -12.046376003172536
+    },
+    "0": {
+      "screw": -18.2,
+      "capsule": -16.7,
+      "bottle": -9.0,
+      "macro3": -14.6,
+      "cashew": 12.7,
+      "macro4": -7.8,
+      "macro3_full": -14.633629558399738,
+      "macro4_full": -7.790222168799804
+    },
+    "1": {
+      "screw": -33.3,
+      "capsule": -23.2,
+      "bottle": -9.0,
+      "macro3": -21.8,
+      "cashew": -4.0,
+      "macro4": -17.4,
+      "macro3_full": -21.84291135647997,
+      "macro4_full": -17.372183517359975
+    }
+  },
+  "cashew_endpoints": {
+    "note": "fourth real category (VisA cashew) from the standard factorial evaluations; AUROCs at full precision with run references; the four-category macro combines these with the three-category MVTec panel",
+    "per_seed": {
+      "42": {
+        "base": {
+          "image_auroc": 0.8974,
+          "run": "fact_cashew_base",
+          "eval_record": "results/raw/fact_cashew_base_eval.json"
+        },
+        "in": {
+          "image_auroc": 0.9396,
+          "run": "fact_cashew_in",
+          "eval_record": "results/raw/fact_cashew_in_eval.json"
+        },
+        "cpl": {
+          "image_auroc": 0.9203999999999999,
+          "run": "fact_cashew_cpl",
+          "eval_record": "results/raw/fact_cashew_cpl_eval.json"
+        },
+        "incpl": {
+          "image_auroc": 0.838,
+          "run": "fact_cashew_incpl",
+          "eval_record": "results/raw/fact_cashew_incpl_eval.json"
+        },
+        "D_pp": -12.5
+      },
+      "0": {
+        "base": {
+          "image_auroc": 0.8096,
+          "run": "f2_cashew_base_s0",
+          "eval_record": "results/raw/f2_cashew_base_s0_eval.json"
+        },
+        "in": {
+          "image_auroc": 0.8004,
+          "run": "f2_cashew_in_s0",
+          "eval_record": "results/raw/f2_cashew_in_s0_eval.json"
+        },
+        "cpl": {
+          "image_auroc": 0.732,
+          "run": "f2_cashew_cpl_s0",
+          "eval_record": "results/raw/f2_cashew_cpl_s0_eval.json"
+        },
+        "incpl": {
+          "image_auroc": 0.8502,
+          "run": "f2_cashew_incpl_s0",
+          "eval_record": "results/raw/f2_cashew_incpl_s0_eval.json"
+        },
+        "D_pp": 12.7
+      },
+      "1": {
+        "base": {
+          "image_auroc": 0.915,
+          "run": "f2_cashew_base_s1",
+          "eval_record": "results/raw/f2_cashew_base_s1_eval.json"
+        },
+        "in": {
+          "image_auroc": 0.9474,
+          "run": "f2_cashew_in_s1",
+          "eval_record": "results/raw/f2_cashew_in_s1_eval.json"
+        },
+        "cpl": {
+          "image_auroc": 0.9571999999999999,
+          "run": "f2_cashew_cpl_s1",
+          "eval_record": "results/raw/f2_cashew_cpl_s1_eval.json"
+        },
+        "incpl": {
+          "image_auroc": 0.95,
+          "run": "f2_cashew_incpl_s1",
+          "eval_record": "results/raw/f2_cashew_incpl_s1_eval.json"
+        },
+        "D_pp": -4.0
+      }
+    }
+  },
+  "macro_convention": "macros computed from full-precision contrasts and rounded once for display; *_full fields keep the unrounded values"
+}

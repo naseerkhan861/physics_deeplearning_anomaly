@@ -1,0 +1,98 @@
+{
+  "screw/base": {
+    "perlin": 0.9611111111111111,
+    "smooth": 0.9866666666666667
+  },
+  "screw/in": {
+    "perlin": 0.9377777777777777,
+    "smooth": 0.9411111111111111
+  },
+  "screw/rec": {
+    "perlin": 0.9988888888888889,
+    "smooth": 1.0
+  },
+  "screw/cpl": {
+    "perlin": 0.8344444444444444,
+    "smooth": 0.5700000000000001
+  },
+  "screw/full": {
+    "perlin": 0.6866666666666666,
+    "smooth": 0.4944444444444444
+  },
+  "capsule/base": {
+    "perlin": 0.998109640831758,
+    "smooth": 1.0
+  },
+  "capsule/in": {
+    "perlin": 0.9149338374291115,
+    "smooth": 0.9338374291115312
+  },
+  "capsule/rec": {
+    "perlin": 0.9829867674858224,
+    "smooth": 1.0
+  },
+  "capsule/cpl": {
+    "perlin": 0.9962192816635161,
+    "smooth": 1.0
+  },
+  "capsule/full": {
+    "perlin": 0.9962192816635161,
+    "smooth": 0.8374291115311909
+  },
+  "bottle/base": {
+    "perlin": 1.0,
+    "smooth": 1.0
+  },
+  "bottle/in": {
+    "perlin": 0.9825,
+    "smooth": 1.0
+  },
+  "bottle/rec": {
+    "perlin": 0.99,
+    "smooth": 1.0
+  },
+  "bottle/cpl": {
+    "perlin": 0.9724999999999999,
+    "smooth": 1.0
+  },
+  "bottle/full": {
+    "perlin": 0.9749999999999999,
+    "smooth": 0.965
+  },
+  "screw/inrec": {
+    "perlin": 0.9388888888888889,
+    "smooth": 0.9655555555555556
+  },
+  "screw/incpl": {
+    "perlin": 0.7366666666666667,
+    "smooth": 0.46777777777777774
+  },
+  "screw/recpl": {
+    "perlin": 0.7577777777777778,
+    "smooth": 0.44222222222222224
+  },
+  "capsule/inrec": {
+    "perlin": 0.9395085066162572,
+    "smooth": 0.9546313799621928
+  },
+  "capsule/incpl": {
+    "perlin": 0.9848771266540643,
+    "smooth": 0.6862003780718336
+  },
+  "capsule/recpl": {
+    "perlin": 0.5708884688090737,
+    "smooth": 0.4782608695652174
+  },
+  "bottle/inrec": {
+    "perlin": 0.9974999999999999,
+    "smooth": 1.0
+  },
+  "bottle/incpl": {
+    "perlin": 0.9225000000000001,
+    "smooth": 0.5549999999999999
+  },
+  "bottle/recpl": {
+    "perlin": 0.9299999999999999,
+    "smooth": 0.995
+  }
+}
